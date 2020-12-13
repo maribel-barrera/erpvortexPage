@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png"  href="recursos/logo.ico">
     <title>Cotización</title>
+    
     <!-- Boostrap css CDN-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
@@ -14,7 +15,7 @@
     <!-- NAVEGADOR COMUN-->
     <section>
         <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="recursos/logo.png" width="50" height="50" alt="">
                 ERP Vortex
             </a>
@@ -38,40 +39,54 @@
 
     <section>
         <form style="margin: 5%;">
-            <label>Favor de llenar el siguiente formulario para hacerle llegar su cotización: </label>
+            <p>Favor de llenar el siguiente formulario para hacerle llegar su cotización: </p>
 
-            <div class="form-group row">
+            <div >
                 <label for="inputNombre">Nombre: </label>
-                <input type="text" id="inputNombre">
+                <input type="text" id="inputNombre" required>
             </div>
 
-            <div class="form-group row">
+            <div >
                 <label for="inputEmpresa">Empresa: </label>
                 <input type="text" id="inputEmpresa" maxlength="150">
             </div>
 
-            <div class="form-group row">
+            <div >
                 <label for="inputNumLicence">Num de Licencias: </label>
                 <input type="number" id="inputNumLicence" minlength="1">
             </div>
 
-            <div class="form-group row">
+            <div >
                 <label for="inputEmail">Email: </label>
-                <input type="email" id="inputEmail" placeholder="sucorreo@ejemplo.com">
+                <input type="email" id="inputEmail" required
+                    placeholder="sucorreo@ejemplo.com">
             </div>
 
-            <div class="form-group row">
+            <div >
                 <label for="inputTel">Teléfono: </label>
-                <input type="tel" id="inputTel">
+                <input type="tel" id="inputTel" required maxlength="10">
             </div>
 
-            <div class="form-group row">
-                <label for="inputModulos">Modulos de Interés: </label>
+            <div>
+                <p>Seleccionar el/los modulos de su interés: </p>
                 <input type="radio" name="chb1" id="chb1">
+                <label for="chb1">CRM </label><br>
+
+                <input type="radio" name="chb2" id="chb2">
+                <label for="chb2">Contabilidad </label><br>
+
+                <input type="radio" name="chb3" id="chb3">
+                <label for="chb3">Obras </label><br>
+
+                <input type="radio" name="chb4" id="chb4">
+                <label for="chb4">Logistica </label><br>
+
+                <input type="radio" name="chb5" id="chb5">
+                <label for="chb5">Mercadotenia </label>
             </div>
 
-            <div class="form-group row">
-                <label for="inputMessage">Mensaje: </label>
+            <div >
+                <label for="inputMessage">Mensaje: </label><br>
                 <textarea name="txtMensaje" id="inputMessage" cols="30" rows="5"></textarea>
             </div>
 
@@ -86,7 +101,8 @@
      <!-- Footer para todas las paguinas-->
      <footer>      
         <div>
-            <p class="copy-footer-29">ERP Vortex SA de CV © 2020. Todos los derechos reservados | Designed for <a href="www.erpvortex.com">ERP Vortex</a></p>         
+            <p class="copy-footer-29">ERP Vortex SA de CV © 2020. Todos los derechos reservados | Designed for 
+                <a href="https://www.erpvortex.com">ERP Vortex</a></p>         
         </div>     
     </footer>
 </body>
