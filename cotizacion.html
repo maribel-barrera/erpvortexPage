@@ -7,7 +7,7 @@
     <title>Cotización</title>
     <!-- Boostrap css CDN-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     
@@ -38,6 +38,8 @@
 
     <section>
         <form style="margin: 5%;">
+            <label>Favor de llenar el siguiente formulario para hacerle llegar su cotización: </label>
+
             <div class="form-group row">
                 <label for="inputNombre">Nombre: </label>
                 <input type="text" id="inputNombre">
@@ -45,7 +47,12 @@
 
             <div class="form-group row">
                 <label for="inputEmpresa">Empresa: </label>
-                <input type="text" id="inputEmpresa">
+                <input type="text" id="inputEmpresa" maxlength="150">
+            </div>
+
+            <div class="form-group row">
+                <label for="inputNumLicence">Num de Licencias: </label>
+                <input type="number" id="inputNumLicence" minlength="1">
             </div>
 
             <div class="form-group row">
@@ -59,14 +66,28 @@
             </div>
 
             <div class="form-group row">
+                <label for="inputModulos">Modulos de Interés: </label>
+                <input type="radio" name="chb1" id="chb1">
+            </div>
+
+            <div class="form-group row">
                 <label for="inputMessage">Mensaje: </label>
-                <textarea name="txtMensaje" id="inputMessage" cols="30" rows="10"></textarea>
+                <textarea name="txtMensaje" id="inputMessage" cols="30" rows="5"></textarea>
             </div>
 
             <div class="col-auto my-1">
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn btn-primary">
+                   Enviar 
+                </button>
             </div>
         </form>
     </section>
+
+     <!-- Footer para todas las paguinas-->
+     <footer>      
+        <div>
+            <p class="copy-footer-29">ERP Vortex SA de CV © 2020. Todos los derechos reservados | Designed for <a href="www.erpvortex.com">ERP Vortex</a></p>         
+        </div>     
+    </footer>
 </body>
 </html>

@@ -7,7 +7,7 @@
     <title>Sobre Vortex</title>
     <!-- Boostrap css CDN-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
@@ -36,31 +36,115 @@
         </nav>
     </section>
 
+    <!-- SOBRE VORTEX -->
     <section>
-        <div style="margin: 20%;">
+        <div style="margin: 10%;">
             <h2>Sobre Nosotros</h2>
+            <p>Vortex comenzó desarrollando modulos de acuerdo a las necesidades administrativas de una empresa. Conforme
+                ha crecido el proyecto se dió un enfoque a la construcción de un ERP. Actualmente se encuentra opendo en el mercado
+                de ERP para la gestión empresarial. 
+            </p>
             <p>
                 Queremos que cualquier empresa tenga a su alcance las herramientas tecnológicas necesarias para colaborar, expandir y manejar su negocio de manera profesional.
             </p>
         </div>
     </section>
 
-    <section style="margin: 5%;">
+    <!-- PRECIOS DE LICENCIA-->
+    <section id="sPrecios" style="margin: 5%;"> 
         <div>
-            <h2>Nuestros Clientes</h2><br>
+            <h3>Precios</h3>
 
-            <div class="card" style="width: 18rem;">
-                <img src="recursos/emp1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Constructora GDC Desarrollos</h5>
-                  <p class="card-text">Administramos ventas, avences de obra.</p>
-                  <a href="#" class="btn btn-primary">Visitar</a>
-                </div>
-              </div>
-
+            <table class="table">
+                <tr>
+                    <th colspan="2">FREELANCE</th>
+                    <th colspan="2">STARTUP</th>
+                    <th colspan="2">ENTERPRISE</th>
+                </tr>
+                <tr>
+                    <td colspan="2">1 Licencia</td>
+                    <td colspan="2">2 - 9 Licencias</td>                    
+                    <td colspan="2">+10 Licencias
+                        <br>+Consultores y servicio técnico
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Para los que están empezando y quieren comenzar a trabajar como los grandes.
+                    </td>
+                    <td><!--LINK EXTERNO  -->
+                        <button type="button" class="btn btn-light"> 
+                            <a href="https://www.erpvortex.com/crm/web.xhtml"> 
+                                Gratis
+                            </a>
+                        </button>
+                    </td>
+                    <td>
+                        Para los que quieren agilizar su operación y llevar un registro profesional de su negocio.
+                    </td>
+                    <td><!--LINK EXTERNO https://www.erpvortex.com -->
+                        <button type="button" class="btn btn-light">
+                            <a href="#">
+                                Demo
+                            </a> 
+                        </button>
+                    </td>
+                    <td>
+                        Para los que necesitan más, sin complicaciones, te regalamos una cotizacion.
+                    </td>
+                    <td><!--LINK INTERNO -->
+                        <button type="button" class="btn btn-light">
+                            <a href="cotizacion.html">
+                                Cotizar
+                            </a>
+                        </button>
+                    </td>
+                </tr>
+            </table>
         </div>
     </section>
 
+    <!-- CLIENTES -->
+    <div class="container">        
+        <h2>Nuestros Clientes: </h2>
+        
+        <div class="row">
+            <div class="card col-4" style="width: 18rem;">
+                <img src="recursos/emp1.png" class="card-img-top image-clientes" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Constructora GDC Desarrollos</h5>
+                  <p class="card-text">Uso de CRM, Administracion de Ventas</p>
+                  <a href="https://www.gdcdesarrollos.com" class="btn btn-primary">Visitar</a>
+                </div>
+            </div>
+
+            <div class="card col-4" style="width: 18rem;">
+                <img src="recursos/emp2.png" class="card-img-top image-clientes" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Diseño y Fabricación Muebles</h5>
+                  <p class="card-text">Gestión de avence de proyectos.</p>
+                  <a href="https://gidsa.com/" class="btn btn-primary">Visitar</a>
+                </div>
+            </div>
+
+            <div class="card col-4" style="width: 18rem;">
+                <img src="recursos/emp3.png" class="card-img-top image-clientes" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Noden Calentadores</h5>
+                  <p class="card-text">Administración, Instalación y Servicio Tecnico.</p>
+                  <a href="https://www.norden.com.mx/" class="btn btn-primary">Visitar</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- COMUN FOOTER-->
+     <footer>      
+        <div>
+            <p class="copy-footer-29">ERP Vortex SA de CV © 2020. Todos los derechos reservados | Designed for <a href="www.erpvortex.com">ERP Vortex</a></p>         
+        </div>     
+    </footer>
 
 </body>
 </html>
