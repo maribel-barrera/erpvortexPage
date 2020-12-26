@@ -1,0 +1,18 @@
+h2, th{
+    color: #313372;
+}
+
+.btn-primary {
+    background-color: #49b29e;
+    border-color: #49b29e;
+}
+
+a{
+    color: white;
+}
+
+.precio-text {
+    color: #49b29e;
+    font-weight: bold;
+    font-size: 2rem;
+}

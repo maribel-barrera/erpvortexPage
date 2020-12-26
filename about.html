@@ -13,98 +13,116 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Mis estilos -->
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
 
     <!-- NAVEGADOR COMUN-->
-    <section>
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">
-                <img src="recursos/logo.png" width="50" height="50" alt="">
-                ERP Vortex
-            </a>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="index.html">
+            <img src="recursos/logo.png" width="50" height="50" alt="">
+        </a>
 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="index.html">Home</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="about.html">Sobre Vortex</a>
+                    <a class="nav-link" href="about.html">Sobre Vortex</a>
                 </li>
                 <li class="nav-item">
-                    <a href="servicios.html">Servicios</a>
+                    <a class="nav-link" href="servicios.html">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a href="contac.html">Contacto</a>
+                    <a class="nav-link" href="contac.html">Contacto</a>
                 </li>
             </ul>
-        </nav>
-    </section>
+        </div>
+    </nav>
 
     <!-- SOBRE VORTEX -->
-    <section>
-        <div style="margin: 10%;">
-            <h2>Sobre Nosotros</h2>
-            <p>Vortex comenzó desarrollando modulos de acuerdo a las necesidades administrativas de una empresa. Conforme
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h2 class="display-4">Sobre Nosotros</h2>
+            <p class="lead">Vortex comenzó desarrollando modulos de acuerdo a las necesidades administrativas de una empresa. Conforme
                 ha crecido el proyecto se dió un enfoque a la construcción de un ERP. Actualmente se encuentra opendo en el mercado
                 de ERP para la gestión empresarial. 
             </p>
-            <p>
+            <p class="lead">
                 Queremos que cualquier empresa tenga a su alcance las herramientas tecnológicas necesarias para colaborar, expandir y manejar su negocio de manera profesional.
             </p>
         </div>
-    </section>
+    </div>
 
     <!-- PRECIOS DE LICENCIA-->
     <section id="sPrecios" style="margin: 5%;"> 
         <div>
-            <h2>Precios</h2>
+            <table class="table table-sm table-borderless table-hover">
+                <thead>
+                    <tr>
+                        <th colspan="2" scope="col">FREELANCE</th>
+                        <th colspan="2" scope="col">STARTUP</th>
+                        <th colspan="2" scope="col">ENTERPRISE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2">1 Licencia</td>
+                        <td colspan="2">2 - 9 Licencias</td>                    
+                        <td colspan="2">+10 Licencias 
+                            <br>+Consultores y servicio técnico
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <!-- Freelance  -->
+                        <td rowspan="2">
+                            Para los que están empezando y quieren comenzar a trabajar como los grandes.
+                        </td>
+                        <td >
+                            <p class="precio-text">$0</p>                            
+                            <button type="button" class="btn btn-primary"> 
+                                <a href="https://www.erpvortex.com/crm/web.xhtml"> 
+                                    Gratis
+                                </a>
+                            </button>                            
+                        </td>
+    
+                        <!--Startup  -->
+                        <td rowspan="2">
+                            Para los que quieren agilizar su operación y llevar un registro profesional de su negocio.
+                        </td>
+                        <td>
+                            <p class="precio-text">$900</p>
+                            <button type="button" class="btn btn-primary">
+                                <a href="https://www.erpvortex.com">
+                                    Demo
+                                </a> 
+                            </button>
+                        </td>
 
-            <table class="table table-sm">
-                <tr>
-                    <th colspan="2">FREELANCE</th>
-                    <th colspan="2">STARTUP</th>
-                    <th colspan="2">ENTERPRISE</th>
-                </tr>
-                <tr>
-                    <td colspan="2">1 Licencia</td>
-                    <td colspan="2">2 - 9 Licencias</td>                    
-                    <td colspan="2">+10 Licencias
-                        <br>+Consultores y servicio técnico
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Para los que están empezando y quieren comenzar a trabajar como los grandes.
-                    </td>
-                    <td><!--LINK EXTERNO  -->
-                        <button type="button" class="btn btn-light"> 
-                            <a href="https://www.erpvortex.com/crm/web.xhtml"> 
-                                Gratis
-                            </a>
-                        </button>
-                    </td>
-                    <td>
-                        Para los que quieren agilizar su operación y llevar un registro profesional de su negocio.
-                    </td>
-                    <td><!--LINK EXTERNO https://www.erpvortex.com -->
-                        <button type="button" class="btn btn-light">
-                            <a href="#">
-                                Demo
-                            </a> 
-                        </button>
-                    </td>
-                    <td>
-                        Para los que necesitan más, sin complicaciones, te regalamos una cotizacion.
-                    </td>
-                    <td><!--LINK INTERNO -->
-                        <button type="button" class="btn btn-light">
-                            <a href="cotizacion.html">
-                                Cotizar
-                            </a>
-                        </button>
-                    </td>
-                </tr>
+                        <!-- Enterprice -->
+                        <td rowspan="2">
+                            Para los que necesitan más, sin complicaciones, te regalamos una cotizacion.
+                        </td>
+                        <td>
+                            <p class="precio-text">Plan</p>
+                            <button type="button" class="btn btn-primary">
+                                <a href="cotizacion.html">
+                                    Cotizar
+                                </a>
+                            </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+               
             </table>
         </div>
     </section>
