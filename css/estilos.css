@@ -2,6 +2,18 @@ body{
     background: linear-gradient(45deg, #d8d8ea, #f8f8f8);
 }
 
+h2{
+    color: #313372;
+}
+
+.li{
+    text-align: center;
+    list-style: none;
+}
+
+p{
+    font-size: 1rem;
+}
 .header {
     padding: 10px;
     height: 300px;
@@ -24,14 +36,13 @@ table{
 
 .image-modulos{
     width: inherit;
-    background-color: #0b5591;
+    /* background-color: #0b5591; */
 }
 
 .image-clientes{
     width: inherit; 
     margin: auto;
 }
-
 
 footer{
     background: #2E2E2E;
